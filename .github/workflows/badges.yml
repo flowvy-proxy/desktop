@@ -1,0 +1,59 @@
+name: Badges
+
+on:
+  release:
+    types: [published]
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: badges
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout badge data branch
+        uses: actions/checkout@v4
+        with:
+          ref: badges
+
+      - name: Compute and write badge data
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          version=$(gh api "repos/$REPO/releases/latest" --jq '.tag_name' || echo "n/a")
+          total=$(gh api --paginate "repos/$REPO/releases" \
+                    --jq '[.[].assets[].download_count] | add // 0')
+          human=$(awk -v n="$total" 'BEGIN{
+            if (n>=1000000) printf "%.1fM", n/1000000;
+            else if (n>=1000) printf "%.1fk", n/1000;
+            else printf "%d", n;
+          }')
+          human=${human/.0M/M}; human=${human/.0k/k}
+          jq -n --arg m "$version" \
+            '{schemaVersion:1,label:"release",message:$m,color:"49DD93",cacheSeconds:3600}' \
+            > release.json
+          jq -n --arg m "$human" \
+            '{schemaVersion:1,label:"downloads",message:$m,color:"49DD93",cacheSeconds:3600}' \
+            > downloads.json
+
+      - name: Commit if changed
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if [ -n "$(git status --porcelain)" ]; then
+            git add release.json downloads.json
+            git commit -m "chore: refresh badge data"
+            git push
+          else
+            echo "No badge changes."
+          fi
