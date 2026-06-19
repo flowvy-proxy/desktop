@@ -1,8 +1,12 @@
 <div align="center">
 
+**English** · [Русский](README.ru.md)
+
+<br>
+
 <img src="assets/header.png" alt="Flowvy" width="720">
 
-### Современный прокси-клиент на движке [mihomo](https://github.com/MetaCubeX/mihomo)
+### A modern proxy client powered by the [mihomo](https://github.com/MetaCubeX/mihomo) engine
 
 Windows · macOS · Linux
 
@@ -10,7 +14,7 @@ Windows · macOS · Linux
 [![Downloads](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/flowvy-proxy/desktop/badges/downloads.json&style=flat-square)](https://github.com/flowvy-proxy/desktop/releases)
 [![Telegram](https://img.shields.io/badge/Telegram-%40flowvy__client-26A5E4?style=flat-square&logo=telegram&logoColor=white)](https://t.me/flowvy_client)
 
-[**Скачать**](#установка) · [**Документация**](https://docs.flowvy.io/) · [**Telegram**](https://t.me/flowvy_client)
+[**Download**](#installation) · [**Documentation**](https://docs.flowvy.io/) · [**Telegram**](https://t.me/flowvy_client)
 
 <br>
 
@@ -20,55 +24,55 @@ Windows · macOS · Linux
 
 <br>
 
-## Почему Flowvy
+## Why Flowvy
 
-- **Создан для подписок** — Flowvy понимает подписки провайдеров глубже других клиентов: трафик и срок действия на карточке профиля, объявления и ссылки на продление прямо в интерфейсе, резервный URL на случай недоступности основного
-- **Попап у трея** — подключение, смена режима и выбор хоста в два клика, как в коммерческих VPN-клиентах. Основное окно открывать не обязательно
-- **Простота без потери глубины** — один активный профиль, понятные группы и хосты, никакого леса настроек. А когда нужно копнуть — YAML-редактор со схемой mihomo, переопределения настроек провайдера и живая карта соединений уже на месте
-- **TUN без лишних запросов** — права администратора нужны один раз, при установке вспомогательного сервиса. Дальше TUN включается обычным переключателем
-- **Приватные логи** — история ваших соединений не записывается на диск. Для обращения в поддержку есть режим диагностики: подробные логи собираются в защищённый архив только пока вы его включили
-- **Работает и офлайн** — группы и выбранные хосты видны без подключения, выбор восстанавливается при следующем соединении
-- **Нативный и лёгкий** — Rust и системный WebView вместо Electron: быстрый запуск и скромный аппетит к памяти
-- **Бета рядом со стабильной** — бета-канал ставится отдельным приложением и не трогает основную установку
+- **Built for subscriptions** — Flowvy understands provider subscriptions more deeply than other clients: traffic and expiry on the profile card, provider announcements and renewal links right inside the app, and a fallback URL for when the primary one is unavailable
+- **Tray popup** — connect, switch mode, and pick a host in two clicks, just like commercial VPN clients. No need to open the main window
+- **Simple without losing depth** — one active profile, clear groups and hosts, no thicket of settings. And when you want to dig deeper, a YAML editor with the mihomo schema, provider setting overrides, and a live connections map are already there
+- **TUN without the nagging** — administrator rights are requested only once, when installing the helper service. After that, TUN is just a toggle
+- **Private logs** — your connection history is never written to disk. For support requests there's a diagnostic mode: detailed logs are gathered into a protected archive only while you keep it enabled
+- **Works offline, too** — groups and selected hosts stay visible without a connection, and your selection is restored on the next connect
+- **Native and lightweight** — Rust and the system WebView instead of Electron: fast startup and a modest memory footprint
+- **Beta next to stable** — the beta channel installs as a separate app and never touches your main installation
 
-## Скриншоты
+## Screenshots
 
 <div align="center">
 <img src="assets/popup.gif" alt="Flowvy Popup" width="720">
 </div>
 
 <details>
-<summary><b>Показать больше</b></summary>
+<summary><b>Show more</b></summary>
 <br>
 <div align="center">
-<img src="assets/profiles.png" alt="Профили" width="720">
-<img src="assets/connections.png" alt="Соединения" width="720">
-<img src="assets/overrides.png" alt="Переопределения" width="720">
-<img src="assets/popup.png" alt="Попап" width="720">
+<img src="assets/profiles.png" alt="Profiles" width="720">
+<img src="assets/connections.png" alt="Connections" width="720">
+<img src="assets/overrides.png" alt="Overrides" width="720">
+<img src="assets/popup.png" alt="Popup" width="720">
 </div>
 </details>
 
-## Установка
+## Installation
 
-| Платформа | Загрузка | Требования |
+| Platform | Download | Requirements |
 | --- | --- | --- |
 | **Windows** | [Flowvy_x64.exe](https://github.com/flowvy-proxy/desktop/releases/latest/download/Flowvy_x64.exe) | Windows 10+ |
 | **macOS** | [Flowvy_arm64.dmg](https://github.com/flowvy-proxy/desktop/releases/latest/download/Flowvy_arm64.dmg) | macOS 10.15+, Apple Silicon |
 | **Linux** | [Flowvy_x64.deb](https://github.com/flowvy-proxy/desktop/releases/latest/download/Flowvy_x64.deb) | Debian / Ubuntu |
 
-Все версии — на странице [релизов](https://github.com/flowvy-proxy/desktop/releases). Подробные инструкции по установке — в [документации](https://docs.flowvy.io/).
+All versions are on the [releases](https://github.com/flowvy-proxy/desktop/releases) page. Detailed installation instructions are in the [documentation](https://docs.flowvy.io/).
 
 > [!TIP]
-> Хотите получать новые функции раньше? **Flowvy Beta** устанавливается рядом со стабильной версией и обновляется независимо — см. [бета-версия](https://docs.flowvy.io/getting-started/beta) в документации.
+> Want new features sooner? **Flowvy Beta** installs alongside the stable version and updates independently — see [beta version](https://docs.flowvy.io/getting-started/beta) in the docs.
 
-## Сообщество и поддержка
+## Community and support
 
-- [Telegram-группа](https://t.me/flowvy_client) — новости, обсуждения, помощь
-- [Issues](https://github.com/flowvy-proxy/desktop/issues) — баг-репорты и предложения
-- [Документация](https://docs.flowvy.io/) — инструкции по всем функциям
+- [Telegram group](https://t.me/flowvy_client) — news, discussion, and help
+- [Issues](https://github.com/flowvy-proxy/desktop/issues) — bug reports and suggestions
+- [Documentation](https://docs.flowvy.io/) — guides for every feature
 
 ---
 
 <div align="center">
-<sub>Flowvy — проприетарное программное обеспечение. В этом репозитории публикуются релизы и принимаются баг-репорты.</sub>
+<sub>Flowvy is proprietary software. This repository hosts releases and accepts bug reports.</sub>
 </div>
