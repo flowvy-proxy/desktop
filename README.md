@@ -18,7 +18,7 @@ Windows · macOS · Linux
 
 <br>
 
-<img src="assets/dashboard.gif" alt="Flowvy Dashboard" width="720">
+<img src="assets/EN/dashboard.gif" alt="Flowvy Dashboard" width="720">
 
 </div>
 
@@ -38,19 +38,8 @@ Windows · macOS · Linux
 ## Screenshots
 
 <div align="center">
-<img src="assets/popup.gif" alt="Flowvy Popup" width="720">
+<img src="assets/EN/popup.gif" alt="Flowvy Popup" width="720">
 </div>
-
-<details>
-<summary><b>Show more</b></summary>
-<br>
-<div align="center">
-<img src="assets/profiles.png" alt="Profiles" width="720">
-<img src="assets/connections.png" alt="Connections" width="720">
-<img src="assets/overrides.png" alt="Overrides" width="720">
-<img src="assets/popup.png" alt="Popup" width="720">
-</div>
-</details>
 
 ## Installation
 
