@@ -10,8 +10,8 @@
 
 Windows · macOS · Linux
 
-[![Release](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/flowvy-proxy/desktop/badges/release.json&style=flat-square)](https://github.com/flowvy-proxy/desktop/releases/latest)
-[![Downloads](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/flowvy-proxy/desktop/badges/downloads.json&style=flat-square)](https://github.com/flowvy-proxy/desktop/releases)
+[![Release](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/flowvy/desktop/badges/release.json&style=flat-square)](https://github.com/flowvy/desktop/releases/latest)
+[![Downloads](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/flowvy/desktop/badges/downloads.json&style=flat-square)](https://github.com/flowvy/desktop/releases)
 [![Telegram](https://img.shields.io/badge/Telegram-%40flowvy__client-26A5E4?style=flat-square&logo=telegram&logoColor=white)](https://t.me/flowvy_client)
 
 [**Скачать**](#установка) · [**Документация**](https://docs.flowvy.io/) · [**Telegram**](https://t.me/flowvy_client)
@@ -45,11 +45,11 @@ Windows · macOS · Linux
 
 | Платформа | Загрузка | Требования |
 | --- | --- | --- |
-| **Windows** | [Flowvy_x64.exe](https://github.com/flowvy-proxy/desktop/releases/latest/download/Flowvy_x64.exe) | Windows 10+ |
-| **macOS** | [Flowvy_arm64.dmg](https://github.com/flowvy-proxy/desktop/releases/latest/download/Flowvy_arm64.dmg) | macOS 10.15+, Apple Silicon |
-| **Linux** | [Flowvy_x64.deb](https://github.com/flowvy-proxy/desktop/releases/latest/download/Flowvy_x64.deb) | Debian / Ubuntu |
+| **Windows** | [Flowvy_x64.exe](https://github.com/flowvy/desktop/releases/latest/download/Flowvy_x64.exe) | Windows 10+ |
+| **macOS** | [Flowvy_arm64.dmg](https://github.com/flowvy/desktop/releases/latest/download/Flowvy_arm64.dmg) | macOS 10.15+, Apple Silicon |
+| **Linux** | [Flowvy_x64.deb](https://github.com/flowvy/desktop/releases/latest/download/Flowvy_x64.deb) | Debian / Ubuntu |
 
-Все версии — на странице [релизов](https://github.com/flowvy-proxy/desktop/releases). Подробные инструкции по установке — в [документации](https://docs.flowvy.io/).
+Все версии — на странице [релизов](https://github.com/flowvy/desktop/releases). Подробные инструкции по установке — в [документации](https://docs.flowvy.io/).
 
 > [!TIP]
 > Хотите получать новые функции раньше? **Flowvy Beta** устанавливается рядом со стабильной версией и обновляется независимо — см. [бета-версия](https://docs.flowvy.io/getting-started/beta) в документации.
@@ -57,7 +57,7 @@ Windows · macOS · Linux
 ## Сообщество и поддержка
 
 - [Telegram-группа](https://t.me/flowvy_client) — новости, обсуждения, помощь
-- [Issues](https://github.com/flowvy-proxy/desktop/issues) — баг-репорты и предложения
+- [Issues](https://github.com/flowvy/desktop/issues) — баг-репорты и предложения
 - [Документация](https://docs.flowvy.io/) — инструкции по всем функциям
 
 ---

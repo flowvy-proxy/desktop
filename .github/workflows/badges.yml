@@ -30,8 +30,13 @@ jobs:
         run: |
           set -euo pipefail
           version=$(gh api "repos/$REPO/releases/latest" --jq '.tag_name' || echo "n/a")
-          total=$(gh api --paginate "repos/$REPO/releases" \
-                    --jq '[.[].assets[].download_count] | add // 0')
+          # Count application packages only. Updater manifests, release notes,
+          # and signatures are fetched automatically and are not app downloads.
+          total=$(gh api --paginate --slurp "repos/$REPO/releases?per_page=100" \
+                    | jq '[.[][] | select(.draft == false) | .assets[]
+                            | select((.name | test("\\.(exe|dmg|deb)$"))
+                                     or (.name | endswith(".app.tar.gz")))
+                            | .download_count] | add // 0')
           human=$(awk -v n="$total" 'BEGIN{
             if (n>=1000000) printf "%.1fM", n/1000000;
             else if (n>=1000) printf "%.1fk", n/1000;
